@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import { ChildArea } from './ChildArea';
 
 function App() {
@@ -9,9 +9,8 @@ function App() {
   const onChangeText = (e) => setText(e.target.value);
   
   const onClickOpen = (e) => setOpen(!open)
-  // const onClickCountUp = () =>{
-  //   setCount(count + 1);
-  // }
+
+  const onClickClose = useCallback(() => setOpen(false), [setOpen]);
   return (
     <div className="App">
       <br />
@@ -19,7 +18,7 @@ function App() {
       <br />
       <br />
       <button onClick={onClickOpen}>表示</button>
-      <ChildArea open={open}/>
+      <ChildArea open={open}  onClickClose={onClickClose}/>
     </div>
   );
 }
