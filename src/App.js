@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { useCallback, useState, useMemo } from 'react';
 import { ChildArea } from './ChildArea';
+import { InlineStyle } from './components/inlineStyle';
 
 function App() {
   const [text, setText] = useState('');
@@ -17,12 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <br />
-      <input value={text} onChange={onChangeText}/>
-      <br />
-      <br />
-      <button onClick={onClickOpen}>表示</button>
-      <ChildArea open={open}  onClickClose={onClickClose}/>
+      <InlineStyle />
     </div>
   );
 }
