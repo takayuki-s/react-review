@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { useCallback, useState } from 'react';
+import { useCallback, useState, useMemo } from 'react';
 import { ChildArea } from './ChildArea';
 
 function App() {
@@ -11,6 +11,10 @@ function App() {
   const onClickOpen = (e) => setOpen(!open)
 
   const onClickClose = useCallback(() => setOpen(false), [setOpen]);
+
+  const temp = useMemo(() => 1 + 3, []);
+  console.log(temp)
+
   return (
     <div className="App">
       <br />
