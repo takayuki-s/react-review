@@ -3,6 +3,7 @@ import './App.css';
 import { useCallback, useState, useMemo } from 'react';
 import { ChildArea } from './ChildArea';
 import { InlineStyle } from './components/inlineStyle';
+import { CssModules } from './components/CssModules';
 
 function App() {
   const [text, setText] = useState('');
@@ -19,6 +20,7 @@ function App() {
   return (
     <div className="App">
       <InlineStyle />
+      <CssModules />
     </div>
   );
 }
