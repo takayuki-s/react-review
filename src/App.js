@@ -4,6 +4,7 @@ import { useCallback, useState, useMemo } from 'react';
 import { ChildArea } from './ChildArea';
 import { InlineStyle } from './components/inlineStyle';
 import { CssModules } from './components/CssModules';
+import { StyledJsx } from './components/StyledJsx';
 
 function App() {
   const [text, setText] = useState('');
@@ -21,6 +22,7 @@ function App() {
     <div className="App">
       <InlineStyle />
       <CssModules />
+      <StyledJsx />
     </div>
   );
 }
