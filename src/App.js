@@ -5,6 +5,7 @@ import { ChildArea } from './ChildArea';
 import { InlineStyle } from './components/inlineStyle';
 import { CssModules } from './components/CssModules';
 import { StyledJsx } from './components/StyledJsx';
+import { StyledComponents } from './components/StyledComponents';
 
 function App() {
   const [text, setText] = useState('');
@@ -23,6 +24,7 @@ function App() {
       <InlineStyle />
       <CssModules />
       <StyledJsx />
+      <StyledComponents />
     </div>
   );
 }
