@@ -6,6 +6,7 @@ import { InlineStyle } from './components/inlineStyle';
 import { CssModules } from './components/CssModules';
 import { StyledJsx } from './components/StyledJsx';
 import { StyledComponents } from './components/StyledComponents';
+import { Emotion } from './components/Emotion';
 
 function App() {
   const [text, setText] = useState('');
@@ -25,6 +26,7 @@ function App() {
       <CssModules />
       <StyledJsx />
       <StyledComponents />
+      <Emotion />
     </div>
   );
 }
