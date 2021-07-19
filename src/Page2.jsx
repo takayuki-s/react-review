@@ -1,7 +1,7 @@
 export const Page2 = () => {
   return (
-    <dic>
+    <div>
       <h1>Page2ページです</h1>
-    </dic>
+    </div>
   )
 }

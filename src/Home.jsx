@@ -1,7 +1,7 @@
 export const Home = () => {
   return (
-    <dic>
+    <div>
       <h1>Homeページです</h1>
-    </dic>
+    </div>
   )
 }
